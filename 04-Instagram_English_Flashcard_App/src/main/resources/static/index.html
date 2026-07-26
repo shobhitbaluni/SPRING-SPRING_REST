@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>English with Yogesh — Flashcards</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header class="app-header">
+		<div class="brand">
+			<span class="brand-badge">Aa</span>
+			<div>
+				<h1>Spoken English Flashcards</h1>
+				<p class="subtitle">Vocabulary &middot; Tenses &middot; Grammar &middot; Phrases</p>
+			</div>
+		</div>
+	</header>
+
+	<main class="app-main">
+		<div class="controls">
+			<div id="category-chips" class="chips"></div>
+			<div class="actions">
+				<button id="shuffle-btn" class="btn">Shuffle</button>
+				<button id="reset-btn" class="btn btn-secondary">Reset</button>
+			</div>
+		</div>
+
+		<div class="progress-row">
+			<span id="progress-label">Card 0 / 0</span>
+			<div class="progress-bar"><div id="progress-fill" class="progress-fill"></div></div>
+		</div>
+
+		<div class="card-stage">
+			<button id="prev-btn" class="nav-btn" aria-label="Previous card">&#8592;</button>
+
+			<div id="flash-card" class="flash-card">
+				<div class="flash-card-inner">
+					<div class="flash-card-face flash-card-front">
+						<span id="front-category" class="category-tag"></span>
+						<p id="front-text" class="main-text"></p>
+						<p id="front-hint" class="hint-text"></p>
+						<span class="tap-hint">Tap to flip</span>
+					</div>
+					<div class="flash-card-face flash-card-back">
+						<span id="back-category" class="category-tag"></span>
+						<p id="back-text" class="main-text"></p>
+						<p id="back-example" class="example-text"></p>
+						<span class="tap-hint">Tap to flip back</span>
+					</div>
+				</div>
+			</div>
+
+			<button id="next-btn" class="nav-btn" aria-label="Next card">&#8594;</button>
+		</div>
+
+		<p class="keyboard-hint">Tip: use &larr; / &rarr; to move between cards, Space to flip.</p>
+	</main>
+
+	<footer class="app-footer">
+		<p>Inspired by the "Hindi&nbsp;&rarr;&nbsp;Fluent English" teaching style — practice a little every day.</p>
+	</footer>
+
+	<script src="js/app.js"></script>
+</body>
+</html>
